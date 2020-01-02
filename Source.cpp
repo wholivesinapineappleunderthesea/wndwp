@@ -4,9 +4,10 @@
 
 #define BACKGROUND_ONE R"!(D:\wa\FDR_1944_Color_Portrait.jpg)!"
 #define BACKGROUND_TWO R"!(D:\wa\arg.jpg)!"
+#define SWITCH_KEY VK_SUBTRACT
 
 int main(int argc, const char* argv[]) {
-	if (RegisterHotKey(0, 0, MOD_NOREPEAT, VK_SUBTRACT)) {
+	if (RegisterHotKey(0, 0, MOD_NOREPEAT, SWITCH_KEY)) {
 		std::cout << "Registered successfully" << std::endl;
 	} else {
 		std::cout << "Failed to register hotkey" << std::endl;
